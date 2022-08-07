@@ -1,0 +1,7 @@
+{
+  "queue": ["kafka", "rabbit"],
+  "topic?{{queue=='kafka'}}": "topic",
+  "is_storage": true,
+  "access_mode?{{is_storage}}": ["ReadWriteOnce", "ReadOnlyMany", "ReadWriteMany"],
+  "app": "app"
+}
